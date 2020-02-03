@@ -26,122 +26,249 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
+/ Set every element's box-sizing to border-box /
+
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+margin-bottom: 15px;
 }
 
-p {
-    line-height: 1.4;
+/ Your code starts here! /
+
+
+.main_container{
+width: 80%;
+margin: auto;
+height: auto;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
+header{
+height: 80px;
+display: flex;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.navbar{
+width: 70%;
+padding-top: 30px;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+.navbar ul{
+display: flex;
+color: #aaa;
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.navbar ul li{
+margin-right: 12%;
+cursor: pointer;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.logo_area{
+padding-top: 20px;
+width: 30%;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.logo{
+background-image: url(../img/logo.png);
+background-size: contain;
+background-repeat: unset;
+width: 200px;
+height: 40px;
+float: right;
+display: block;
+
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.banner{
+height: 500px;
+display: flex;
+border-bottom: 1px solid #000;
 }
 
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+.get_started{
+width: 50%;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+.banner_text{
+text-align: center;
+font-size: 4rem;
+font-weight: bold;
+font-family: fantasy;
+font-style: italic;
+margin: 100px auto 30px;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.start_btn_area{
+text-align: center;
 }
 
-footer {
-    width: 100%;
-    background: black;
+.start_btn{
+font-size: 1rem;
+width: 38%;
+height: 40px;
+background: none;
+border: 1px solid #000;
+cursor: pointer;
 }
 
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+.banner_img{
+width: 50%;
+text-align: center;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+.banner_img img{
+margin-top: 50px;
+}
+
+.content1{
+display: flex;
+height: 200px;
+padding: 50px 0 10px;
+}
+
+.features{
+width: 45%;
+margin-right: 5%;
+overflow: hidden;
+}
+
+.about{
+width: 50%;
+overflow: hidden;
+}
+
+.features_txt, .about_txt, .services_txt, .product_txt, .vision_txt{
+font-style: italic;
+font-weight: bold;
+font-family: fantasy;
+}
+
+.content_img{
+background-image: url(../img/mid-page-accent.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+height: 300px;
+}
+
+.content2{
+padding: 50px 0;
+display: flex;
+height: 200px;
+}
+
+.services, .product{
+padding-right: 3%;
+}
+
+.main_content{
+border-bottom: 1px solid #000;
+}
+
+footer{
+padding: 50px 0;
+}
+
+.contact_title{
+font-family: fantasy;
+font-style: italic;
+font-weight: bold;
+}
+
+.phone{
+margin: 1.5rem 0;
+}
+
+.copyirght_area{
+text-align: center;
 }
 
 
+/* Responsive web design*/
+
+
+/ Extra small devices (phones, 767px and down) /
+@media only screen and (max-width: 767px) {
+/ header styles /
+header nav {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: auto;
+}
+.logo img {
+height: auto;
+
+}
+.banner, .banner_img, .banner_text{
+width: 20%;
+}
+}
+
+/ Small devices (portrait tablets and large phones, 660px and up) /
+@media only screen and (min-width: 667px) {
+/ About Section Styles /
+header nav {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: auto;
+}
+.logo img {
+height: auto;
+
+}
+.banner, .banner_img, .banner_text{
+width: 20%;
+}
+}
+
+/ large devices (landscape tablets, 900px and up) /
+@media only screen and (min-width: 900px) {
+/ header styles /
+header nav {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: auto;
+}
+.logo img {
+height: auto;
+
+}
+.banner, .banner_img, .banner_text{
+width: 20%;
+}
+}
 
