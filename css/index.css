@@ -46,7 +46,7 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
-/ Set every element's box-sizing to border-box /
+/* Set every element's box-sizing to border-box */
 
 * {
 box-sizing: border-box;
@@ -63,7 +63,7 @@ letter-spacing: 1px;
 margin-bottom: 15px;
 }
 
-/ Your code starts here! /
+/* Your code starts here! */
 
 
 .main_container{
@@ -215,9 +215,9 @@ text-align: center;
 /* Responsive web design*/
 
 
-/ Extra small devices (phones, 767px and down) /
+/* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
-/ header styles /
+/* header styles */
 header nav {
 display: flex;
 flex-direction: column;
@@ -234,9 +234,9 @@ width: 20%;
 }
 }
 
-/ Small devices (portrait tablets and large phones, 660px and up) /
+/* Small devices (portrait tablets and large phones, 660px and up) */
 @media only screen and (min-width: 667px) {
-/ About Section Styles /
+/* About Section Styles */
 header nav {
 display: flex;
 flex-direction: column;
@@ -253,9 +253,9 @@ width: 20%;
 }
 }
 
-/ large devices (landscape tablets, 900px and up) /
+/* large devices (landscape tablets, 900px and up) */
 @media only screen and (min-width: 900px) {
-/ header styles /
+/* header styles */
 header nav {
 display: flex;
 flex-direction: column;
