@@ -1,3 +1,274 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+box-sizing: border-box;
+}
+
+html, body {
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+.main_container{
+width: 80%;
+margin: auto;
+height: auto;
+}
+
+header{
+height: 80px;
+display: flex;
+}
+
+.navbar{
+width: 70%;
+padding-top: 30px;
+}
+
+.navbar ul{
+display: flex;
+color: #aaa;
+}
+
+.navbar ul li{
+margin-right: 12%;
+cursor: pointer;
+}
+
+.logo_area{
+padding-top: 20px;
+width: 30%;
+}
+
+.logo{
+background-image: url(../img/logo.png);
+background-size: contain;
+background-repeat: unset;
+width: 200px;
+height: 40px;
+float: right;
+display: block;
+
+}
+
+.banner{
+height: 500px;
+display: flex;
+border-bottom: 1px solid #000;
+}
+
+.get_started{
+width: 50%;
+}
+
+.banner_text{
+text-align: center;
+font-size: 4rem;
+font-weight: bold;
+font-family: fantasy;
+font-style: italic;
+margin: 100px auto 30px;
+}
+
+.start_btn_area{
+text-align: center;
+}
+
+.start_btn{
+font-size: 1rem;
+width: 38%;
+height: 40px;
+background: none;
+border: 1px solid #000;
+cursor: pointer;
+}
+
+.banner_img{
+width: 50%;
+text-align: center;
+}
+
+.banner_img img{
+margin-top: 50px;
+}
+
+.content1{
+display: flex;
+height: 200px;
+padding: 50px 0 10px;
+}
+
+.features{
+width: 45%;
+margin-right: 5%;
+overflow: hidden;
+}
+
+.about{
+width: 50%;
+overflow: hidden;
+}
+
+.features_txt, .about_txt, .services_txt, .product_txt, .vision_txt{
+font-style: italic;
+font-weight: bold;
+font-family: fantasy;
+}
+
+.content_img{
+background-image: url(../img/mid-page-accent.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+height: 300px;
+}
+
+.content2{
+padding: 50px 0;
+display: flex;
+height: 200px;
+}
+
+.services, .product{
+padding-right: 3%;
+}
+
+.main_content{
+border-bottom: 1px solid #000;
+}
+
+footer{
+padding: 50px 0;
+}
+
+.contact_title{
+font-family: fantasy;
+font-style: italic;
+font-weight: bold;
+}
+
+.phone{
+margin: 1.5rem 0;
+}
+
+.copyirght_area{
+text-align: center;
+}
+
+
+/* Responsive web design*/
+
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+/* header styles */
+header nav {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: auto;
+}
+.logo img {
+height: auto;
+
+}
+.banner, .banner_img, .banner_text{
+width: 20%;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 660px and up) */
+@media only screen and (min-width: 667px) {
+/* About Section Styles */
+header nav {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: auto;
+}
+.logo img {
+height: auto;
+
+}
+.banner, .banner_img, .banner_text{
+width: 20%;
+}
+}
+
+/* large devices (landscape tablets, 900px and up) */
+@media only screen and (min-width: 900px) {
+/* header styles */
+header nav {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: auto;
+}
+.logo img {
+height: auto;
+
+}
+.banner, .banner_img, .banner_text{
+width: 20%;
+}
+}
+
